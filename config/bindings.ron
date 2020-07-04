@@ -1,0 +1,12 @@
+(
+    axes: {
+        "thrust_fwd": Emulated(pos: Key(W), neg: Key(S)),
+        "thrust_roll": Emulated(pos: Key(D), neg: Key(A)),
+        "thrust_lateral": Emulated(pos: Key(E), neg: Key(Q)),
+        "thrust_vertical": Emulated(pos: Key(R), neg: Key(F)),
+    },
+    actions: {
+        "toggle_system_map": [[Key(Space)]],
+        "toggle_flight_data": [[Key(Tab)]],
+    },
+)

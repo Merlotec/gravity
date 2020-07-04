@@ -1,0 +1,58 @@
+[package]
+name = "gravity"
+version = "0.1.0"
+authors = ["Brodie Knight <merlotec@gmail.com>"]
+edition = "2018"
+
+[build-dependencies]
+winres = "0.1.11"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+# Error handling
+err-derive = "0.2.4"
+
+# Maths
+nalgebra = "0.21.0"
+num = "0.2.1"
+
+# Serialization
+serde = "1.0.106"
+serde_json = "1.0.51"
+
+# Utils
+derive-new = "0.5.8"
+failure = "0.1.7"
+rand = "0.7.2"
+lazy_static = "1.4.0"
+derivative = "2.1.1"
+specs-derive = "0.4.1"
+
+# Shader layout
+glsl-layout = "0.3.2"
+
+# Our own star renderer.
+#space-render="0.1.1"
+
+[dependencies.space-render]
+path="../space_render/"
+
+# Physics
+[dependencies.specs-physics]
+git = "https://github.com/amethyst/specs-physics.git"
+
+# The amethyst game engine.
+[dependencies.amethyst]
+version = "0.15.0"
+features = ["vulkan", "gltf", "no-slow-safety-checks"]
+
+
+
+# Our own combat renderer.
+[dependencies.combat-render]
+path = "../combat_render/"
+features = ["vulkan"]
+
+[dependencies.amethyst_particle]
+path = "../amethyst_particle"
+features = ["vulkan"]

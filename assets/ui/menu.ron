@@ -1,0 +1,146 @@
+#![enable(implicit_some)]
+// Detailed field information can be found at https://docs.amethyst.rs/master/amethyst_ui/enum.UiWidget.html and related pages
+Container(
+    transform: (
+        id: "background",
+        anchor: Middle,
+        stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: false),
+        width: 20.,
+        height: 20.,
+    ),
+
+    children: [
+
+        Container(
+            transform: (
+                id: "container_start",
+                y: 210,
+                width: 755.,
+                height: 150.,
+                anchor: Middle,
+            ),
+            children: [
+                Label(
+                    transform: (
+                        id: "start",
+                        width: 750.,
+                        height: 145.,
+                        tab_order: 1,
+                        anchor: Middle,
+                    ),
+                    text: (
+                        text: "GRAVITY",
+                        font_size: 80.,
+                        color: (1., 1., 1., 1.),
+                        font: File("fonts/consola.ttf", ("TTF", ())),
+                    ),
+                ),
+            ]
+        ),
+
+
+        Container(
+            transform: (
+                id: "container_play",
+                y: 50,
+                width: 755.,
+                height: 150.,
+                anchor: Middle,
+            ),
+            background: SolidColor(0.15, 0.0, 0.15, 1.0),
+            children: [
+
+                // Complex Button
+                Button(
+                    transform: (
+                        id: "play",
+                        width: 750.,
+                        height: 145.,
+                        tab_order: 3,
+                        anchor: Middle,
+                        mouse_reactive: true,
+                    ),
+                    button: (
+                        text: "Play Game",
+                        font: File("fonts/consola.ttf", ("TTF", ())),
+                        font_size: 60.,
+                        normal_text_color: (1.0, 1.0, 1.0, 1.0), // ffa500
+                        normal_image: SolidColor(0., 0., 0., 1.),
+                        hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                        press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                    )
+                ),
+            ]
+        ),
+
+        Container(
+                    transform: (
+                        id: "container_difficulty",
+                        y: -110.,
+                        width: 755.,
+                        height: 150.,
+                        anchor: Middle,
+                    ),
+                    background: SolidColor(0.15, 0.0, 0.15, 1.0),
+                    children: [
+
+                        // Complex Button
+                        Button(
+                            transform: (
+                                id: "difficulty",
+                                width: 750.,
+                                height: 145.,
+                                tab_order: 3,
+                                anchor: Middle,
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "Difficulty",
+                                font: File("fonts/consola.ttf", ("TTF", ())),
+                                font_size: 60.,
+                                normal_text_color: (1.0, 1.0, 1.0, 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+
+
+        Container(
+            transform: (
+                id: "container_exit",
+                y: -270.,
+                width: 755.,
+                height: 150.,
+                anchor: Middle,
+            ),
+            background: SolidColor(0.15, 0.0, 0.15, 1.0),
+            children: [
+
+                // Complex Button
+                Button(
+                    transform: (
+                        id: "quit",
+                        width: 750.,
+                        height: 145.,
+                        tab_order: 3,
+                        anchor: Middle,
+                        mouse_reactive: true,
+                    ),
+                    button: (
+                        text: "Quit",
+                        font: File("fonts/consola.ttf", ("TTF", ())),
+                        font_size: 60.,
+                        normal_text_color: (1.0, 1.0, 1.0, 1.0), // ffa500
+                        normal_image: SolidColor(0., 0., 0., 1.),
+                        hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                        press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                    )
+                ),
+            ]
+        ),
+
+    ],
+)

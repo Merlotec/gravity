@@ -1,0 +1,13 @@
+#![enable(implicit_some)]
+
+Prefab (
+    entities: [
+        (
+            data: (
+                gltf: File("object/map/blank_point.gltf", ()),
+                tag: (),
+                transform: (),
+            ),
+        ),
+    ],
+)

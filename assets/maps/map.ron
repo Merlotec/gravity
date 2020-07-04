@@ -1,0 +1,226 @@
+#![enable(implicit_some)]
+
+Prefab(
+    entities: [
+        (
+            data: (
+                transform: (
+                    translation: (-6000.0, 0.0, 0.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (2.0, 2.0, 2.0),
+                ),
+                map_point: (
+                    index: 0,
+                    position: (-6000.0, 600.0, -600.0),
+                    pre_dialogue: "tutorial",
+                    post_dialogue: "intro",
+                ),
+                name: (name: "The Fringes"),
+            )
+        ),
+        (
+            data: (
+                transform: (
+                    translation: (-5500.0, 0.0, 0.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (2.0, 2.0, 2.0),
+                ),
+                gltf: File("maps/sol/pluto.gltf", ()),
+                map_point: (
+                    index: 1,
+                    position: (-5500.0, 600.0, -600.0),
+                    combat: "pluto",
+                    pre_dialogue: "enter_pluto",
+                    post_dialogue: "exit_pluto",
+                ),
+                name: (name: "Pluto"),
+            )
+        ),
+        (
+            data: (
+                transform: (
+                    translation: (-4000.0, 0.0, 0.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (2.0, 2.0, 2.0),
+                ),
+                gltf: File("maps/sol/neptune.gltf", ()),
+                map_point: (
+                    index: 2,
+                    position: (-4000.0, 600.0, -600.0),
+                    combat: "neptune",
+                    pre_dialogue: "enter_neptune",
+                    post_dialogue: "exit_neptune",
+                ),
+                name: (name: "Neptune"),
+            )
+        ),
+        (
+            data: (
+                transform: (
+                    translation: (-2600.0, 0.0, 0.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (2.0, 2.0, 2.0),
+                ),
+                gltf: File("maps/sol/uranus.gltf", ()),
+                map_point: (
+                    index: 3,
+                    position: (-2600.0, 600.0, -600.0),
+                    combat: "uranus",
+                    pre_dialogue: "enter_uranus",
+                    post_dialogue: "exit_uranus",
+                ),
+                name: (name: "Uranus"),
+            )
+        ),
+        (
+            data: (
+                transform: (
+                    translation: (-1300.0, 0.0, 0.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (2.0, 2.0, 2.0),
+                ),
+                gltf: File("maps/sol/saturn.gltf", ()),
+                map_point: (
+                    index: 4,
+                    position: (-1300.0, 600.0, -600.0),
+                    combat: "saturn",
+                    pre_dialogue: "enter_saturn",
+                    post_dialogue: "exit_saturn",
+                ),
+                name: (name: "Saturn"),
+            )
+        ),
+        (
+            data: (
+                transform: (
+                    translation: (0.0, 0.0, 0.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (2.0, 2.0, 2.0),
+                ),
+                gltf: File("maps/sol/jupiter.gltf", ()),
+                map_point: (
+                    index: 5,
+                    position: (0.0, 600.0, -600.0),
+                    combat: "jupiter",
+                    pre_dialogue: "enter_jupiter",
+                    post_dialogue: "exit_jupiter",
+                ),
+                name: (name: "Jupiter"),
+            )
+        ),
+        (
+            data: (
+                transform: (
+                    translation: (2000.0, 0.0, 0.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (2.0, 2.0, 2.0),
+                ),
+                gltf: File("maps/sol/mars.gltf", ()),
+                map_point: (
+                    index: 6,
+                    position: (2000.0, 600.0, -600.0),
+                    combat: "mars",
+                    pre_dialogue: "enter_mars",
+                    post_dialogue: "exit_mars",
+                ),
+                name: (name: "Mars"),
+            )
+        ),
+        (
+            data: (
+                transform: (
+                    translation: (2900.0, 0.0, 0.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (2.0, 2.0, 2.0),
+                ),
+                gltf: File("maps/sol/moon.gltf", ()),
+                map_point: (
+                    index: 7,
+                    position: (2900.0, 600.0, -600.0),
+                    combat: "moon",
+                    pre_dialogue: "enter_moon",
+                    post_dialogue: "exit_moon",
+                ),
+                name: (name: "Moon"),
+            )
+        ),
+        (
+            data: (
+                transform: (
+                    translation: (3200.0, 0.0, 0.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (2.0, 2.0, 2.0),
+                ),
+                gltf: File("maps/sol/earth.gltf", ()),
+                map_point: (
+                    index: 8,
+                    position: (3200.0, 600.0, -600.0),
+                    combat: "earth",
+                    pre_dialogue: "enter_earth",
+                    post_dialogue: "exit_earth",
+                ),
+                name: (name: "Earth"),
+            )
+        ),
+        (
+            data: (
+                transform: (
+                    translation: (4000.0, 0.0, 0.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (2.0, 2.0, 2.0),
+                ),
+                gltf: File("maps/sol/venus.gltf", ()),
+                map_point: (
+                    index: 9,
+                    position: (4000.0, 600.0, -600.0),
+                    combat: "venus",
+                    pre_dialogue: "enter_venus",
+                    post_dialogue: "exit_venus",
+                ),
+                name: (name: "Venus"),
+            )
+        ),
+        (
+            data: (
+                transform: (
+                    translation: (5000.0, 0.0, 0.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (2.0, 2.0, 2.0),
+                ),
+                gltf: File("maps/sol/mercury.gltf", ()),
+                map_point: (
+                    index: 10,
+                    position: (5000.0, 600.0, -600.0),
+                    combat: "mercury",
+                    pre_dialogue: "enter_mercury",
+                    post_dialogue: "exit_mercury",
+                ),
+                name: (name: "Mercury"),
+            )
+        ),
+        (
+            data: (
+                transform: (
+                    translation: (8000.0, 1000.0, 0.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (450.0, 450.0, 450.0),
+                ),
+                star: (
+                    color: Srgb(1.0, 1.0, 0.9),
+                ),
+                light: (
+                    light: Point((
+                        intensity: 8.0,
+                        color: (0.8, 0.8, 0.7),
+                    )),
+                ),
+            ),
+        ),
+        (
+            data: (
+                light: (ambient_color: ((0.05, 0.05, 0.05, 0.05))),
+            ),
+        ),
+
+    ],
+)

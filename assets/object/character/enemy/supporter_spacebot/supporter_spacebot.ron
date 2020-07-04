@@ -1,0 +1,35 @@
+#![enable(implicit_some)]
+
+Prefab (
+    entities: [
+        (
+            data: (
+                gltf: File("object/character/enemy/supporter_spacebot/supporter_spacebot.gltf", ()),
+                tag: (),
+                transform: (),
+            ),
+        ),
+        (
+            parent: 0,
+            data: (
+                transform: (
+                    translation: (1.0, 0.0, -5.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (1.0, 1.0, 1.0),
+                ),
+                weapon_slot: (0),
+            ),
+        ),
+        (
+            parent: 0,
+            data: (
+                transform: (
+                    translation: (-1.0, 0.0, -5.0),
+                    rotation: (0.0, 0.0, 1.0, 0.0),
+                    scale: (1.0, 1.0, 1.0),
+                ),
+                weapon_slot: (1),
+            ),
+        ),
+    ],
+)
