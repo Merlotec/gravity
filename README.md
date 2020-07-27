@@ -1,17 +1,3 @@
-# Objectives
-**Assets**
-* Create basic master drone model and texture.
-* Create placeholder slave model.
-
-**Gameplay**
-* General ability selection logic and ui.
-* Character spawning logic with movement animation.
-
-**Rendering**
-* Particle system.
-* Plasma/laser beam
-* Explosion effect
-
 # Abilities
 **Main Rocket**
 * Attack - fires the master drone's primary weapon.
