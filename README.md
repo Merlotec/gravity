@@ -3,8 +3,6 @@
 * Attack - fires the master drone's primary weapon.
 * Summon Drone - only works if less than 3 drones on battlefield.
 * Charge - charges energy banks for ultimate attack.
-* Shield - casts a defensive shield which can reduce/eliminate the power of some enemy attacks (may debuf our attacks).
-* Flee - leave the battle (only works if master drone is above half hp)
 
 (All options display a select ui, except Charge and Flee)
 
