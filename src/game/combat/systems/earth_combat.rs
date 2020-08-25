@@ -77,6 +77,8 @@ impl<'s> System<'s> for EarthCombatSystem {
                                     entities.delete(ent);
                                 }
                             }
+
+                            // Give the master drone the ability.
                             Character::insert_ability(
                                 &entities,
                                 &mut parents,

@@ -46,8 +46,6 @@ git = "https://github.com/amethyst/specs-physics.git"
 version = "0.15.0"
 features = ["vulkan", "gltf", "no-slow-safety-checks"]
 
-
-
 # Our own combat renderer.
 [dependencies.combat-render]
 path = "../combat_render/"

@@ -72,6 +72,7 @@ pub use {
     guardian::GuardianDrone,
     earth::EarthCharacter,
 };
+use space_render::{Atmosphere, Planet};
 
 macro_rules! define_character {
     (
@@ -1099,5 +1100,7 @@ pub struct CharacterPrefabData {
     gltf: Option<AssetPrefab<GltfSceneAsset, GltfSceneFormat>>,
     light: Option<LightPrefab>,
     weapon_slot: Option<WeaponSlot>,
+    atmosphere: Option<Atmosphere>,
+    planet: Option<Planet>,
     // TODO: Add physics data.
 }

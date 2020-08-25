@@ -195,9 +195,9 @@ pub fn build_application<'a, 'b, 'c, S: State<AggregateData<'a, 'b>, StateEvent>
 
                         // Our own custom plugins
                         .with_plugin(CosmosRender::new(Some(Cosmos::default())))
-                        .with_plugin(AtmosphereRender::default())
                         .with_plugin(FlashRender::new("textures/flash_billboard.png"))
                         .with_plugin(StarRender::new("textures/star_glow.png"))
+                        .with_plugin(AtmosphereRender::default())
                         .with_plugin(ParticleRender::default())
                         .with_plugin(RebuildPlugin::default())
 

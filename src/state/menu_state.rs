@@ -185,17 +185,17 @@ impl<'a, 'b> State<AggregateData<'a, 'b>, StateEvent> for MainMenuState {
             }
         }
 
-        if !self.playing_music {
-            if let Some(ref handle) = self.music_handle {
-                if let Some(output) = data.world.try_fetch::<Output>() {
-                    let storage = data.world.read_resource::<AssetStorage<Source>>();
-                    if let Some(sound) = storage.get(&handle) {
-                        output.play_n_times(sound, 1.0, 500);
-                        self.playing_music = true;
-                    }
-                }
-            }
-        }
+        // if !self.playing_music {
+        //     if let Some(ref handle) = self.music_handle {
+        //         if let Some(output) = data.world.try_fetch::<Output>() {
+        //             let storage = data.world.read_resource::<AssetStorage<Source>>();
+        //             if let Some(sound) = storage.get(&handle) {
+        //                 output.play_n_times(sound, 1.0, 500);
+        //                 self.playing_music = true;
+        //             }
+        //         }
+        //     }
+        // }
 
         data.data.dispatch_all(data.world);
         Trans::None
